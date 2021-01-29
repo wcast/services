@@ -3,7 +3,7 @@
     "description": "Package services for the Laravel Framework",
     "type": "library",
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "1.0",
     "authors": [
         {
             "name": "Rogério Gomes",
