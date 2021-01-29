@@ -1,7 +1,6 @@
 <?php
 namespace WCast\Services;
 
-use Illuminate\Support\Facades\Storage;
 use Symfony\Component\DomCrawler\Crawler;
 
 class Cnpj
@@ -35,7 +34,6 @@ class Cnpj
     public function __construct()
     {
         session_start();
-        $storage = Storage::get('APP');
         $this->pasta_cookies = storage_path('wcast/cookies/');
         $this->cookie_file = $this->pasta_cookies . 'cnpj_' . session_id();
         if (!file_exists($this->cookie_file)) {
