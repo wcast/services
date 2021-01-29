@@ -1,0 +1,33 @@
+{
+    "name": "wcast/services",
+    "description": "Package services for the Laravel Framework",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Rogério Gomes",
+            "email": "rogerio.wcast@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/dom-crawler": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "WCast\\Services\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WCast\\Services\\Tests\\": "tests/"
+        },
+        "classmap": [
+            "tests/Feature/CnpjTest.php",
+            "tests/Unit/CnpjTest.php"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    }
+}
