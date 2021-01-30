@@ -3,6 +3,10 @@
 
 namespace WCast\Services;
 
+/**
+ * Estudar
+ * https://www.bcb.gov.br/estabilidadefinanceira/cotacoestodas
+ * */
 
 class CotacaoMoeda
 {
